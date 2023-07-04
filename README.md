@@ -50,7 +50,7 @@ Time to see how our model describes data after the fit has been done. We use the
     trex-fitter p compact.config "Regions=three_lep_presel_2jets" | tee trex_p.log
 
 #### Ranking plot
-To see which nuisance parameter has the largest impact on the uncertainty of our signal strength, we make use of the r action (see the TRExFitter readme for more information on this [[3](https://gitlab.cern.ch/TRExStats/TRExFitter/blob/master/README.md)] ). For this tutorial, you can run them all at once:
+To see which nuisance parameter has the largest impact on the uncertainty of our signal strength, we make use of the r action (see the TRExFitter readme for more information on this [[3](https://gitlab.cern.ch/TRExStats/TRExFitter/blob/master/README.md)]). For this tutorial, you can run them all at once:
 
     trex-fitter r compact.config "Regions=three_lep_presel_2jets"
 
