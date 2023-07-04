@@ -43,7 +43,7 @@ The first step after creating/reading the histograms is to produce a workspace c
 Next up, we are going to visualize the regions we want to fit. Run the d action next to produce pre-fit plots:
 
     trex-fitter d compact.config "Regions=three_lep_presel_2jets" | tee trex_d.log
-- the Plots/ folder contains one plot showing data and MC per region you defined, as well as summary plots
+- the Plots/ folder contains plots showing data and MC per region you defined, as well as summary plots
 - the Tables/ folder contains various tables in text or .tex format, showing you for example the yields per sample and per region
 
 The plots produced include the effects from all systematics sources specified in the config in the bands drawn. As an example, here is the plot of the 3l2j region:
