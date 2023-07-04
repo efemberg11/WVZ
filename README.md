@@ -64,13 +64,13 @@ To see which nuisance parameter has the largest impact on the uncertainty of our
 
 For each nuisance parameter, we perform four fits. The specific nuisance parameter is fixed to one of these configurations per fit:
 
-pre-fit value + pre-fit uncertainty
+   pre-fit value + pre-fit uncertainty
 
-pre-fit value - pre-fit uncertainty
+   pre-fit value - pre-fit uncertainty
 
-post-fit value + post-fit uncertainty
+   post-fit value + post-fit uncertainty
 
-post-fit value - post-fit uncertainty
+   post-fit value - post-fit uncertainty
 
 
 
