@@ -25,16 +25,16 @@ Create and enter the working directory:
 #### Input histogram production:
 First of all, we need to read the ntuples and turn them into histograms for further use within the framework. To do so, we make use of the n action:
    
-   trex-fitter n clear_full_old.config "Regions=three_lep_presel_2jets" | tee trex_n.log
+    trex-fitter n clear_full_old.config "Regions=three_lep_presel_2jets" | tee trex_n.log
    
 #### Creating the workspace
 The first step after creating/reading the histograms is to produce a workspace containing our fit model:
    
    trex-fitter wfs clear_full_old.config "Regions=three_lep_presel_2jets" | tee trex_w.log
 
-   w - create the RooStats xmls and workspace
-   f - fit the workspace
-   s - calculate significance
+   w - create the RooStats xmls and workspace;
+   f - fit the workspace;
+   s - calculate significance;
 
 #### Producing the first plots
 Next up, we are going to visualize the regions we want to fit. Run the d action next to produce pre-fit plots:
