@@ -16,7 +16,7 @@ Create and enter the working directory:
     source /share/shared_data/root/bin/thisroot.sh
     root -x -b -q compact_teacher.cpp 2>&1 | tee BDT.log
 
-#### Write BDT weight to ntuple:
+#### Write BDT weights to ntuple:
 
     root -x -b -q compact_writer.cpp 2>&1 |tee writer2.log 
 
