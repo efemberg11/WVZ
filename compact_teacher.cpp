@@ -1,5 +1,5 @@
 // Script to train BDT results to all trees in all .root files in the given directory
-// To run (change directory!):
+
 #include <cstdlib>
 #include <iostream>
 #include <map>
