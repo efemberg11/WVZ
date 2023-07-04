@@ -54,11 +54,23 @@ The plots produced include the effects from all systematics sources specified in
 Time to see how our model describes data after the fit has been done. We use the p option to produce post-fit plots:
 
     trex-fitter p compact.config "Regions=three_lep_presel_2jets" | tee trex_p.log
+    
+![Image alt](https://github.com/OlesyaTSU14/WVZ/blob/main/Plots/three_lep_presel_2jets_postFit.png)
 
 #### Ranking plot
 To see which nuisance parameter has the largest impact on the uncertainty of our signal strength, we make use of the r action (see the TRExFitter readme for more information on this [[3](https://gitlab.cern.ch/TRExStats/TRExFitter/blob/master/README.md)]). For this tutorial, you can run them all at once:
 
     trex-fitter r compact.config "Regions=three_lep_presel_2jets"
+
+For each nuisance parameter, we perform four fits. The specific nuisance parameter is fixed to one of these configurations per fit:
+
+pre-fit value + pre-fit uncertainty
+pre-fit value - pre-fit uncertainty
+post-fit value + post-fit uncertainty
+post-fit value - post-fit uncertainty
+
+![Image alt](https://github.com/OlesyaTSU14/WVZ/blob/main/Plots/Ranking.png)
+
 
    
 
