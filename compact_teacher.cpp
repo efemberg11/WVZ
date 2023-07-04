@@ -1,4 +1,6 @@
-// Script to train BDT results to all trees in all .root files in the given directory
+//  compact_teacher.cpp
+//  Created by Olesia Kuchinskaia on 30/10/2021.
+//  Script to train BDT results to all trees in all .root files in the given directory
 
 #include <cstdlib>
 #include <iostream>
