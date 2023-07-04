@@ -3,6 +3,7 @@
 // .L BDTApplication.C+
 // BDT calibration file is defined in BDT_ApplyFile(). Names of variables in BDT_ApplyFile() 
 // and BDT_ApplyTree() must be the same.
+// BDT_ApplyDirectory("/share/users/okuchins/WVZ/code_generator/full_stack/all_region_2/latest_v7_fit_inputs/MC16a")
 
 #include <cstdlib>
 #include <iostream>
