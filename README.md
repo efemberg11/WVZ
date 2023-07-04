@@ -20,10 +20,10 @@ Create and enter the working directory:
 
     root -x -b -q compact_writer.cpp 2>&1 |tee writer2.log 
 
-### TRExFitter [[2](https://trexfitter-docs.web.cern.ch/trexfitter-docs/)] (tutorial for 3l2j region):
+### TRExFitter [[2](https://trexfitter-docs.web.cern.ch/trexfitter-docs/)]:
 
 #### Input histogram production:
-First of all, we need to read the ntuples and turn them into histograms for further use within the framework. To do so, we make use of the n action:
+First of all, we need to read the ntuples and turn them into histograms for further use within the framework. To do so, we make use of the n action (for example 3l2j region):
    
     trex-fitter n clear_full_old.config "Regions=three_lep_presel_2jets" | tee trex_n.log
    
