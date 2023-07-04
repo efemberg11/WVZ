@@ -48,7 +48,7 @@ Next up, we are going to visualize the regions we want to fit. Run the d action 
 
 The plots produced include the effects from all systematics sources specified in the config in the bands drawn. As an example, here is the plot of the 3l2j region:
 
-![Image alt](https://github.com/OlesyaTSU14/WVZ/edit/main/Plots/three_lep_presel_2jets.png)
+![Image alt](https://github.com/OlesyaTSU14/WVZ/blob/main/Plots/three_lep_presel_2jets.png)
 
 #### Producing the post-fit plots
 Time to see how our model describes data after the fit has been done. We use the p option to produce post-fit plots:
