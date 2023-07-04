@@ -30,26 +30,29 @@ First of all, we need to read the ntuples and turn them into histograms for furt
 #### Creating the workspace
 The first step after creating/reading the histograms is to produce a workspace containing our fit model:
    
-   trex-fitter wfs clear_full_old.config "Regions=three_lep_presel_2jets" | tee trex_w.log
+    trex-fitter wfs clear_full_old.config "Regions=three_lep_presel_2jets" | tee trex_w.log
 
-   w - create the RooStats xmls and workspace;
-   f - fit the workspace;
-   s - calculate significance;
+   w - create the RooStats xmls and workspace
+   
+   f - fit the workspace
+   
+   s - calculate significance
+   
 
 #### Producing the first plots
 Next up, we are going to visualize the regions we want to fit. Run the d action next to produce pre-fit plots:
 
-   trex-fitter d compact.config "Regions=three_lep_presel_2jets" | tee trex_d.log
+    trex-fitter d compact.config "Regions=three_lep_presel_2jets" | tee trex_d.log
 
 #### Producing the post-fit plots
 Time to see how our model describes data after the fit has been done. We use the p option to produce post-fit plots:
 
-   trex-fitter p compact.config "Regions=three_lep_presel_2jets" | tee trex_p.log
+    trex-fitter p compact.config "Regions=three_lep_presel_2jets" | tee trex_p.log
 
 #### Ranking plot
 To see which nuisance parameter has the largest impact on the uncertainty of our signal strength, we make use of the r action (see the TRExFitter readme for more information on this [[3] (https://gitlab.cern.ch/TRExStats/TRExFitter/blob/master/README.md)] ). For this tutorial, you can run them all at once:
 
-   trex-fitter r compact.config "Regions=three_lep_presel_2jets"
+    trex-fitter r compact.config "Regions=three_lep_presel_2jets"
 
    
 
