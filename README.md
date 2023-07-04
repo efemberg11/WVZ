@@ -78,8 +78,7 @@ post-fit value - post-fit uncertainty
 
 
 
-
-##good luck for you!
+## Good luck for you!
 
 
    
