@@ -10,18 +10,19 @@ Create and enter the working directory:
 
     mkdir myProject 
     cd myProject 
-
-source /share/shared_data/root/bin/thisroot.sh
    
-    ## BDT training:
-root -x -b -q compact_teacher.cpp 2>&1 | tee BDT.log
+## BDT training:
 
-    ### Write BDT weight to ntuple:
-root -x -b -q compact_writer.cpp 2>&1 |tee writer2.log 
+    source /share/shared_data/root/bin/thisroot.sh
+    root -x -b -q compact_teacher.cpp 2>&1 | tee BDT.log
 
-   ## TRExFitter (tutorial for 3l2j region) [2](https://trexfitter-docs.web.cern.ch/trexfitter-docs/):
+### Write BDT weight to ntuple:
 
-   ### Input histogram production:
+    root -x -b -q compact_writer.cpp 2>&1 |tee writer2.log 
+
+## TRExFitter (tutorial for 3l2j region) [2](https://trexfitter-docs.web.cern.ch/trexfitter-docs/):
+
+### Input histogram production:
    First of all, we need to read the ntuples and turn them into histograms for further use within the framework. To do so, we make use of the n action:
    trex-fitter n clear_full_old.config "Regions=three_lep_presel_2jets" | tee trex_n.log
    
