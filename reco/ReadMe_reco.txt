@@ -26,5 +26,5 @@ Enjoy to read logs.
 To check reco results you can read/process output AOD file (See ATAS tutorial how to...).
 
 For development You can make your fork of Athena in Gitlab (more details: https://atlassoftwaredocs.web.cern.ch/gittutorial/).
-And then init your workspace using first_time_setup.sh and make_installed.sh in reco folder
+And then init your workspace using first_time_setup.sh and make_installed.sh in reco folder, and then run my_reco_script.sh
 
